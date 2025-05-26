@@ -66,7 +66,7 @@ def run_register_model(data_path: str, top_n: int):
         run_view_type=ViewType.ACTIVE_ONLY,
         max_results=1,
         order_by=["metrics.test_rmse ASC"]
-    )[0]
+    )
 
     # Register the best model
     model_uri = f"runs:/{best_run.info.run_id}/model"
