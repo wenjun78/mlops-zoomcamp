@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/975287031744304131/94f2d96ede3c42a794585b6319cefcfc/artifacts
+end_time: 1747876746443
+entry_point_name: ''
+experiment_id: '975287031744304131'
+lifecycle_stage: active
+run_id: 94f2d96ede3c42a794585b6319cefcfc
+run_name: burly-lamb-65
+run_uuid: 94f2d96ede3c42a794585b6319cefcfc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747876743579
+status: 3
+tags: []
+user_id: codespace

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/975287031744304131/1f7a854b3c6b4aa9862ea6654bf572fd/artifacts
+end_time: 1747876580310
+entry_point_name: ''
+experiment_id: '975287031744304131'
+lifecycle_stage: active
+run_id: 1f7a854b3c6b4aa9862ea6654bf572fd
+run_name: melodic-snail-186
+run_uuid: 1f7a854b3c6b4aa9862ea6654bf572fd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747876572118
+status: 3
+tags: []
+user_id: codespace
