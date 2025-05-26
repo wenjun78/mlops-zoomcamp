@@ -1,0 +1,15 @@
+artifact_uri: file:///workspaces/mlops-zoomcamp/02-expe/mlruns/105841291152659451/8b2606c2149d47ad92eadd8b9440fba2/artifacts
+end_time: 1748227448241
+entry_point_name: ''
+experiment_id: '105841291152659451'
+lifecycle_stage: active
+run_id: 8b2606c2149d47ad92eadd8b9440fba2
+run_name: handsome-boar-439
+run_uuid: 8b2606c2149d47ad92eadd8b9440fba2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748227434390
+status: 3
+tags: []
+user_id: codespace

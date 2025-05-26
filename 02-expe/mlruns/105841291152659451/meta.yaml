@@ -1,0 +1,6 @@
+artifact_location: file:///workspaces/mlops-zoomcamp/02-expe/mlruns/105841291152659451
+creation_time: 1748226311288
+experiment_id: '105841291152659451'
+last_update_time: 1748226311288
+lifecycle_stage: active
+name: random-forest-regressor
