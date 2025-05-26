@@ -60,13 +60,24 @@ def run_register_model(data_path: str, top_n: int):
     client = MlflowClient()
 
     # Retrieve the top_n model runs and log the models
-    experiment = client.get_experiment_by_name(EXPERIMENT_NAME)
+    hpo_experiment = client.get_experiment_by_name(HPO_EXPERIMENT_NAME)
+    runs = client.search_runs(
+        experiment_ids=[hpo_experiment.experiment_id],
+        run_view_type=ViewType.ACTIVE_ONLY,
+        max_results=top_n,
+        order_by=["metrics.rmse ASC"]
+    )
+
+    for run in runs:
+        train_and_log_model(data_path=data_path, params=run.data.params)
+
+    best_experiment = client.get_experiment_by_name(EXPERIMENT_NAME)
     best_run = client.search_runs(
-        experiment_ids=[experiment.experiment_id],
+        experiment_ids=[best_experiment.experiment_id],
         run_view_type=ViewType.ACTIVE_ONLY,
         max_results=1,
         order_by=["metrics.test_rmse ASC"]
-    )
+    )[0]
 
     # Register the best model
     model_uri = f"runs:/{best_run.info.run_id}/model"
