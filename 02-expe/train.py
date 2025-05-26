@@ -24,6 +24,7 @@ def run_train(data_path: str):
     X_train, y_train = load_pickle(os.path.join(data_path, "train.pkl"))
     X_val, y_val = load_pickle(os.path.join(data_path, "val.pkl"))
 
+    mlflow.set_experiment("random-forest-regressor")
     mlflow.sklearn.autolog()
 
     with mlflow.start_run():
